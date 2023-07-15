@@ -1,10 +1,12 @@
 import serial
-
-from pynput.keyboard import Key , Controller
+import pynput
+from pynput.mouse import Button
+from pynput.keyboard import Key , Controller 
 
 s = serial.Serial('COM7',9600)
 
 keyboard = Controller()
+mouse = pynput.mouse.Controller()
 
 while True:
     data = s.readline()
@@ -25,3 +27,10 @@ while True:
         keyboard.press(Key.right)
         keyboard.release(Key.right)
         print("right")
+    if(data.decode().strip()=="leftClick"):
+        mouse.click(Button.left)
+        print("leftClick")
+    if(data.decode().strip()=="rightClick"):
+        mouse.click(Button.right)
+        print("rightClick")
+        
