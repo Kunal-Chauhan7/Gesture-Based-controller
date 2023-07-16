@@ -59,3 +59,18 @@ This code snippet utilizes a serial connection to receive data and control keybo
 10. After each action, a corresponding message is printed to the console.
 
 In summary, this code reads data from a serial connection and controls keyboard and mouse inputs based on the received data. It simulates pressing and releasing arrow keys for movement and pressing and releasing mouse buttons for clicking.
+
+## Circuit Diagram
+
+![Cicuit Diagram 1](./images/diagram%201.png)
+
+![Cicuit Diagram 2](./images/diagram%202.png)
+
+## Picture of Working model
+
+![Model Picture 1](./images/image%201.jpg)
+
+![Model Picture 2](./images/image%202.jpg)
+
+
+
