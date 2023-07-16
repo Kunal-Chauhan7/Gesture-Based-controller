@@ -2,6 +2,7 @@ import serial
 import pynput
 from pynput.mouse import Button
 from pynput.keyboard import Key , Controller 
+import time
 
 s = serial.Serial('COM7',9600)
 
@@ -13,24 +14,33 @@ while True:
 
     if(data.decode().strip()=="up"):
         keyboard.press(Key.up)
+        time.sleep(0.4)
         keyboard.release(Key.up)
         print("up")
     if(data.decode().strip()=="down"):
         keyboard.press(Key.down)
+        time.sleep(0.4)
         keyboard.release(Key.down)
         print("down")
     if(data.decode().strip()=="left"):
         keyboard.press(Key.left)
+        time.sleep(0.4)
         keyboard.release(Key.left)
         print("left")
     if(data.decode().strip()=="right"):
         keyboard.press(Key.right)
+        time.sleep(0.4)
         keyboard.release(Key.right)
         print("right")
     if(data.decode().strip()=="leftClick"):
-        mouse.click(Button.left)
+        mouse.press(Button.left)
+        time.sleep(1)
+        mouse.release(Button.left)
         print("leftClick")
     if(data.decode().strip()=="rightClick"):
-        mouse.click(Button.right)
+        mouse.press(Button.right)
+        time.sleep(1)
+        mouse.release(Button.right)
+
         print("rightClick")
         

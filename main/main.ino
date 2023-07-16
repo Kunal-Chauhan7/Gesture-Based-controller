@@ -29,6 +29,7 @@ void setup()
 
 void loop()
 {
+  delay(500);
   buttonState_right = digitalRead(buttonPin_right);
   buttonState_left = digitalRead(buttonPin_left);
   if(buttonState_left == 1){
@@ -40,7 +41,6 @@ void loop()
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
   data.X = map(ax, -17000, 17000, 0, 255 );
   data.Y = map(ay, -17000, 17000, 0, 255);
-  delay(250);
    if (data.Y < 80) { //gesture : down 
     Serial.println("up");
     }
