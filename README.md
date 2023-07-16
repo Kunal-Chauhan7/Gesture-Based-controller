@@ -73,4 +73,7 @@ In summary, this code reads data from a serial connection and controls keyboard 
 ![Model Picture 2](./images/image%202.jpg)
 
 
+## video demonstration 
+
+![Watch the video] (https://youtu.be/3vMhn5RamHw)
 
