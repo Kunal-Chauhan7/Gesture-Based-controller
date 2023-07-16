@@ -41,16 +41,16 @@ void loop()
   mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
   data.X = map(ax, -17000, 17000, 0, 255 );
   data.Y = map(ay, -17000, 17000, 0, 255);
-   if (data.Y < 80) { //gesture : down 
+   if (data.Y < 80) {
     Serial.println("up");
     }
- if (data.Y > 145) {//gesture : up
+ if (data.Y > 145) {
   Serial.println("down");
     }
- if (data.X > 155) {//gesture : left
+ if (data.X > 155) {
   Serial.println("left");
     }
- if (data.X < 80) {//gesture : right
+ if (data.X < 80) {
   Serial.println("right");
     }
 }

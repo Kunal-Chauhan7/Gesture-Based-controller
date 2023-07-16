@@ -41,6 +41,5 @@ while True:
         mouse.press(Button.right)
         time.sleep(1)
         mouse.release(Button.right)
-
         print("rightClick")
         
