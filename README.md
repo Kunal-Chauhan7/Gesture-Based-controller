@@ -75,5 +75,5 @@ In summary, this code reads data from a serial connection and controls keyboard 
 
 ## video demonstration 
 
-![Watch the video] (https://youtu.be/3vMhn5RamHw)
+[![Watch the video](http://i3.ytimg.com/vi/3vMhn5RamHw/hqdefault.jpg)](https://youtu.be/3vMhn5RamHw)
 
